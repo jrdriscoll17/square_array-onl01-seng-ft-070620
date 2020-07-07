@@ -1,3 +1,9 @@
 def square_array(array)
-  array.each{|x| print x*2}
+  square_array = []
+  count = 0
+  
+  array.each do |x| 
+    square_array[count] = x**2
+    count += 1
+  end
 end
